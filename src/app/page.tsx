@@ -10,6 +10,7 @@ export default function Home() {
   const increaseNumber = () => {
     setMyNumber((prev) => prev + 1);
   };
+
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
       <h1 className='bg-amber-800 p-2 text-2xl text-slate-50'>

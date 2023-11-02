@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "prettier": "npx prettier --write .",
     "lint:dev": "eslint ./src -c .eslintrc.json --max-warnings=0",
-     "test": "pnpm prettier && pnpm lint:dev && pnpm build"
+    "test": "pnpm prettier && pnpm lint:dev && pnpm build"
   },
   "dependencies": {
     "next": "14.0.1",

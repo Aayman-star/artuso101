@@ -5,9 +5,14 @@ type somedata = {
   somenumber: number;
 };
 
+interface SomeName {
+  somename: string;
+}
+
 export default function Home() {
   const [myNumber, setMyNumber] = useState(0);
   const myNewNumber: somedata = { somenumber: 10 };
+  const myName: SomeName = { somename: 'artuso' };
   const testvariable = 0;
 
   const decreaseNumber = () => {
@@ -19,7 +24,12 @@ export default function Home() {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
-      <p>{myNewNumber.somenumber}</p>
+      <div className='flex items-center gap-x-2'>
+        {' '}
+        <p>My Variable:{myNewNumber.somenumber}</p>
+        <p>My Name: {myName.somename}</p>
+      </div>
+
       <h1 className='bg-amber-800 p-2 text-2xl text-slate-50'>
         This is the first test with husky,eslint and prettier
       </h1>

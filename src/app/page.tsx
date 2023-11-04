@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [myNumber, setMyNumber] = useState(0);
-  const testvariable = 0;
+  const testVariable = 0;
 
   const decreaseNumber = () => {
     setMyNumber((prev) => prev - 1);
@@ -36,7 +36,7 @@ export default function Home() {
           +
         </button>
       </div>
-      <div>{testvariable}</div>
+      <div>{testVariable}</div>
     </main>
   );
 }

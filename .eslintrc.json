@@ -20,6 +20,16 @@
         "ignoreRestSiblings": true
       }
     ],
+    //I am adding the camel case rule as a check to see if I have understood and implemented it right
+    "camelcase": [
+      "error",
+      {
+        "properties": "always",
+        "ignoreDestructuring": true,
+        "ignoreGlobals": true
+      }
+    ],
+
     "@typescript-eslint/no-explicit-any": "warn"
   }
 }

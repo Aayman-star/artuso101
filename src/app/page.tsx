@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [myNumber, setMyNumber] = useState(0);
+  const testvariable = 0;
 
   const decreaseNumber = () => {
     setMyNumber((prev) => prev - 1);
@@ -19,6 +20,7 @@ export default function Home() {
       <h2 className='font-semi-bold text-xl text-amber-800 underline'>
         This is a simple counter.
       </h2>
+      <h3 className='text-xl text-fuchsia-800'>Extra Text to check</h3>
       <div className='flex  items-center gap-10'>
         <button
           onClick={decreaseNumber}
@@ -34,6 +36,7 @@ export default function Home() {
           +
         </button>
       </div>
+      <div>{testvariable}</div>
     </main>
   );
 }

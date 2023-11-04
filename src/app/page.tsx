@@ -1,8 +1,13 @@
 'use client';
 import { useState } from 'react';
 
+type somedata = {
+  somenumber: number;
+};
+
 export default function Home() {
   const [myNumber, setMyNumber] = useState(0);
+  const myNewNumber: somedata = { somenumber: 10 };
   const testvariable = 0;
 
   const decreaseNumber = () => {
@@ -14,6 +19,7 @@ export default function Home() {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
+      <p>{myNewNumber.somenumber}</p>
       <h1 className='bg-amber-800 p-2 text-2xl text-slate-50'>
         This is the first test with husky,eslint and prettier
       </h1>

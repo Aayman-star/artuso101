@@ -22,12 +22,14 @@ export default function Home() {
     setMyNumber((prev) => prev + 1);
   };
 
+  const myNewVariable: string = 'It should work';
   return (
     <main className='flex min-h-screen flex-col items-center justify-evenly p-24'>
       <div className='flex items-center gap-x-2'>
         {' '}
         <p>My Variable:{myNewNumber.somenumber}</p>
         <p>My Name: {myName.somename}</p>
+        <p>{myNewVariable}</p>
       </div>
 
       <h1 className='bg-amber-800 p-2 text-2xl text-slate-50'>
